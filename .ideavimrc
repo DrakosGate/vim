@@ -1,0 +1,79 @@
+set so=5
+set hlsearch
+set showmode
+
+set ignorecase
+set smartcase
+set incsearch
+
+set visualbell
+set noerrorbells
+set belloff=all
+
+set number relativenumber
+set nu rnu
+
+" Always use the system clipboard
+set clipboard+=unnamedplus
+
+" Plugins
+" Replacing brackets etc
+set surround 
+set multiple-cursors
+" Comment/uncomment
+set commentary
+" 
+set ReplaceWithRegister
+" Argument stuff
+set argtextobj
+" Adds entire file as text object
+set textobj-entire
+" Smart joining shift-j
+set ideajoin
+" File browsing
+set NERDTree
+" Install this - highlighting during F
+set quickscope
+
+" quickscope setup
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" https://github-wiki-see.page/m/JetBrains/ideavim/wiki/Select-mode
+set idearefactormode=keep
+
+" Preferred leader key (spacebar)
+let mapleader=" "
+nnoremap <space> <nop>
+
+" Leader
+nnoremap <leader>e :action GotoNextError\|ShowErrorDescription<CR>
+nnoremap <leader>p :action GotoPreviousError\|ShowErrorDescription<CR>
+
+" Set all IDE handlers to Vim
+sethandler <C-2> a:vim
+sethandler <C-S-2> a:vim
+sethandler <C-S-6> a:vim
+sethandler <C-a> a:vim
+sethandler <C-b> a:vim
+sethandler <C-d> a:vim
+sethandler <C-e> a:vim
+sethandler <C-f> a:vim
+sethandler <C-g> a:vim
+sethandler <C-h> a:vim
+sethandler <C-i> a:vim
+sethandler <C-j> a:vim
+sethandler <C-k> a:vim
+sethandler <C-l> a:vim
+sethandler <C-l> a:vim
+sethandler <C-m> a:vim
+sethandler <C-n> a:vim
+sethandler <C-o> a:vim
+sethandler <C-p> a:vim
+sethandler <C-Q> a:vim
+sethandler <A-Q> a:vim
+sethandler <C-r> a:vim
+sethandler <C-s> a:vim
+sethandler <C-t> a:vim
+sethandler <C-v> a:vim
+sethandler <C-w> a:vim
+sethandler <S-TAB> a:vim
